@@ -8,8 +8,9 @@ def test_fizzbuzzer(number, output):
 
 @pytest.mark.parametrize("number, output", [
     (3, [1, 2, "fizz"]),
-    (15, [1, 2, "fizz", 4, "buzz", "fizz", 7, 8, 9, "buzz", 11, "fizz", 13, 14, "fizzbuzz"]),
-    ()
+    (15, [1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz"]),
+    (5, [1, 2, "fizz", 4, "buzz"]),
+    (-5, ["zubb", -4, "zzif", -2, -1])
 ]
                          )
 def test_fizzbuzz(number, output):
